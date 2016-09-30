@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="tittle">Welcome to my quiz App</string>
+    <string name="topics">Choose one of the following topics and participate on a quiz based on the topic you have chosen</string>
+    <string name="politics">Politics</string>
+    <string name="cars">Cars</string>
+    <string name="sport">Sport</string>
 </resources>

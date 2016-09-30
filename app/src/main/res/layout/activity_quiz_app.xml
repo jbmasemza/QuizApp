@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="welcome to my quiz app "
+            android:text="@string/tittle"
             android:textAllCaps="true"
             android:textSize="25sp" />
 
@@ -31,7 +31,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="choose one of the following topics and participate in a quize based on the topic you have chosen "
+        android:text="@string/topics"
         android:textAllCaps="true" />
 
     <RadioGroup
@@ -43,28 +43,23 @@
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="politics"
+        android:text="@string/politics"
         android:id="@+id/politics" />
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="cars"
+        android:text="@string/cars"
         android:id="@+id/cars" />
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sport"
+        android:text="@string/sport"
         android:id="@+id/sport" />
 
     </RadioGroup>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="click"
-        android:id="@+id/confirm" />
     </LinearLayout>
 
 </RelativeLayout>

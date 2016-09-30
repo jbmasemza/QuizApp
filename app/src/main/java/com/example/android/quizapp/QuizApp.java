@@ -12,7 +12,6 @@ public class QuizApp extends AppCompatActivity
 {
     RadioGroup redigroup;
     RadioButton selected;
-    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -21,7 +20,7 @@ public class QuizApp extends AppCompatActivity
         setContentView(R.layout.activity_quiz_app);
 
         redigroup = (RadioGroup) findViewById(R.id.radiogroup);
-        btn = (Button) findViewById(R.id.confirm);
+
 
         redigroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
@@ -32,7 +31,7 @@ public class QuizApp extends AppCompatActivity
                 selected = (RadioButton) redigroup.findViewById(checkedId);
                 if( selected.getId() == R.id.politics)
                 {
-                    Intent i = new Intent(QuizApp.this,Questions.class);
+                    Intent i = new Intent(QuizApp.this,Politics.class);
                     startActivity(i);
                 }
                 else if (selected.getId() == R.id.cars)
