@@ -25,40 +25,40 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/quiz"
-            android:scaleType="center" />
+            android:scaleType="center"
+            android:src="@drawable/quiz" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/topics"
-        android:textAllCaps="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/topics"
+            android:textAllCaps="true" />
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radiogroup">
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/politics"
-        android:id="@+id/politics" />
+            <RadioButton
+                android:id="@+id/politics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/politics" />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cars"
-        android:id="@+id/cars" />
+            <RadioButton
+                android:id="@+id/cars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cars" />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sport"
-        android:id="@+id/sport" />
+            <RadioButton
+                android:id="@+id/sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sport" />
 
-    </RadioGroup>
+        </RadioGroup>
 
     </LinearLayout>
 
