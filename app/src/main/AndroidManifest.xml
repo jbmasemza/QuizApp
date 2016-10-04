@@ -15,8 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Questions" />
-        <activity android:name=".Cars"></activity>
+        <activity android:name=".Politics" />
+        <activity android:name=".Cars" />
+        <activity android:name=".Sport"></activity>
     </application>
 
 </manifest>

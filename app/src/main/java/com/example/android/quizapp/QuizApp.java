@@ -41,7 +41,8 @@ public class QuizApp extends AppCompatActivity
                 }
                 else if (selected.getId() == R.id.sport)
                 {
-
+                    Intent i = new Intent(QuizApp.this,Sport.class);
+                    startActivity(i);
                 }
             }
         });
