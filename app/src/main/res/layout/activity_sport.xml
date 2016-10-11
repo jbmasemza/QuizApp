@@ -23,8 +23,8 @@
         android:layout_height="wrap_content"
         android:text="Questions"
         android:textAllCaps="true"
-        android:textSize="25sp"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black"
+        android:textSize="25sp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,13 +34,14 @@
         android:textSize="20sp"/>
 
     <RadioGroup
+        android:id="@+id/record"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <RadioButton
+            android:id="@+id/marathon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/marathon"
             android:text="Mr Wyde Van Nieker"
             android:textColor="@android:color/black"
             android:textSize="15sp"/>
@@ -48,23 +49,23 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Ms Caster Semenya"
             android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:text="Ms Caster Semenya"/>
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Mr Usain Bolt"
             android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:text="Mr Usain Bolt"/>
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Mr Oscar Pistorius"
             android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:text="Mr Oscar Pistorius"/>
+            android:textSize="15sp"/>
 
     </RadioGroup>
     <TextView
@@ -75,37 +76,38 @@
         android:textSize="20sp"/>
 
     <RadioGroup
+        android:id="@+id/soccer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Mr L Messi"
             android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:text="Mr L Messi"/>
+            android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
             android:id="@+id/player"
-            android:text="Mr Christiano Ronaldo"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr Christiano Ronaldo"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Mr D Drogba"
             android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:text="Mr D Drogba"/>
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Mr David Berkham"
             android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:text="Mr David Berkham"/>
+            android:textSize="15sp"/>
 
     </RadioGroup>
 
@@ -117,36 +119,38 @@
         android:textSize="20sp"/>
 
     <RadioGroup
+        android:id="@+id/fifa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Mr Sepp Blatter"
             android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:text="Mr Sepp Blatter"/>
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Mr Tokyo Sexwale"
             android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:text="Mr Tokyo Sexwale"/>
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/fifap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr Gianni Infantino"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Mr Danny Jordan"
             android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:text="Mr Gianni Infantino"/>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:text="Mr Danny Jordan"/>
+            android:textSize="15sp"/>
 
     </RadioGroup>
 
@@ -158,37 +162,38 @@
         android:textSize="20sp"/>
 
     <RadioGroup
+        android:id="@+id/coach"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:text="Mr Paul Pogba"
             android:textColor="@android:color/black"
-            android:text="Mr Paul Pogba"/>
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:text="Louis van Gaal"
             android:textColor="@android:color/black"
-            android:text="Louis van Gaal"/>
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:text="Mr Ryan Giggs"
             android:textColor="@android:color/black"
-            android:text="Mr Ryan Giggs"/>
+            android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"
             android:id="@+id/manchester"
-            android:text="Mr Jose Mourinho"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr Jose Mourinho"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
     </RadioGroup>
 
@@ -201,36 +206,38 @@
         android:textSize="20sp"/>
 
     <RadioGroup
+        android:id="@+id/champion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <RadioButton
+            android:id="@+id/sundowns"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:text="Mamelodi sundowns"
             android:textColor="@android:color/black"
-            android:text="Mamelodi sundowns"/>
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:text="Kaizer Chiefs"
             android:textColor="@android:color/black"
-            android:text="Kaizer Chiefs"/>
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:text="Oralndo Pirates"
             android:textColor="@android:color/black"
-            android:text="Oralndo Pirates"/>
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:text="Super Sport United"
             android:textColor="@android:color/black"
-            android:text="Super Sport United"/>
+            android:textSize="15sp"/>
 
 
 
@@ -238,6 +245,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:onClick="quizAnswer"
         android:text="submit"
         android:textColor="@android:color/black"
         android:textSize="25sp"/>

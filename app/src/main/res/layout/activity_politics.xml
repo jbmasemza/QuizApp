@@ -34,37 +34,38 @@
         android:textSize="20sp"/>
 
     <RadioGroup
+        android:id="@+id/sabc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <RadioButton
+            android:id="@+id/id_sabcCoo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_sabcCoo"
             android:text="Mr Hlaudi Motsoening"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mr Ndlozi"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ms Baleka Mbete"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mr Solly Msimanga"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
     </RadioGroup>
 
@@ -78,6 +79,7 @@
         android:textSize="20sp"/>
 
     <RadioGroup
+        android:id="@+id/gabons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -85,30 +87,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
           android:text="Mr Robert Mugabe"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
         <RadioButton
+            android:id="@+id/id_gabon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_gabon"
             android:text="Mr Ali Bongo Ondimba "
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" Mr Muhammadu Buhari"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mr Goodluck Jonathan"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
     </RadioGroup>
 
@@ -122,6 +124,7 @@
 
 
     <RadioGroup
+        android:id="@+id/cogta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -135,9 +138,9 @@
             android:layout_height="wrap_content"
             android:text="Ms Bahabile Dlamini"/>
         <RadioButton
+            android:id="@+id/id_des"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_des"
             android:text="Mr Des Van Royen"/>
         <RadioButton
             android:layout_width="wrap_content"
@@ -151,17 +154,19 @@
         android:layout_height="wrap_content"
         android:text="4.Who is the president of Peoples's Replublic of China?"
         android:textColor="@android:color/black"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
 
 
     <RadioGroup
+        android:id="@+id/chinese"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <RadioButton
+            android:id="@+id/china"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-          android:text="Zhang Xun"/>
+          android:layout_height="wrap_content"
+            android:text="Zhang Xun"/>
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -174,9 +179,9 @@
             android:text="Mr Jackie Chan"/>
 
         <RadioButton
+            android:id="@+id/id_xi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_xi"
             android:text="Mr Xi Jinping"/>
     </RadioGroup>
 
@@ -189,42 +194,45 @@
 
 
     <RadioGroup
+        android:id="@+id/saa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <RadioButton
+            android:id="@+id/id_myeni"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_myeni"
             android:text="Ms Dudu Cynthis Myeni"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ms Nomvula Mokonyane"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ms Thoko Didiza"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
            android:text="Mr Melusi Gigaba"
-            android:textSize="15sp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
 
     </RadioGroup>
 
     <Button
+        android:id="@+id/submit"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:onClick="quizAnswer"
         android:text="submit"
         android:textColor="@android:color/black"
         android:textSize="25sp"/>
