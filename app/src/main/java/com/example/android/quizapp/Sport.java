@@ -1,5 +1,6 @@
 package com.example.android.quizapp;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -140,12 +141,19 @@ public class Sport extends AppCompatActivity {
         AlertDialog.Builder builder= new AlertDialog.Builder(this) ;
         builder.setIcon(R.drawable.quiz);
         builder.setTitle("QuizApp results");
-        builder.setMessage("Points :"+points+"\nCorrect Answers: "+correct);
-        builder.setNegativeButton("OK",null);
+        builder.setMessage("Points :"+points+"\nCorrect Answers: "+correct+"\n\n The correct answers are"+"\n1.Mr Wyde Van Nieker"
+                +"\n2.Mr Christiano Ronaldo"+"\n3.Mr Gianni Infantino"+"\n4.Mr Jose Mourinho"+"\n5.Mamelodi sundowns");
+        builder.setPositiveButton("OK",null);
         builder.show();
 
     }
 
+    public void onClick(View v)
+    {
+        Intent i;
+        i = new Intent(this,QuizApp.class);
+        startActivity(i);
+    }
 
 }
 

@@ -1,5 +1,7 @@
 package com.example.android.quizapp;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -43,7 +45,7 @@ public class Cars extends AppCompatActivity {
                     points = points + 20;
                     correct++;
                 }
-                else if (checkedId !=  R.id.id_sabcCoo)
+                else if (checkedId !=  R.id.year)
                 {
 
                     answer = "wrong answer";
@@ -64,7 +66,7 @@ public class Cars extends AppCompatActivity {
                     points = points + 20;
                     correct++;
                 }
-                else if (checkedId !=  R.id.id_gabon)
+                else if (checkedId !=  R.id.fast)
                 {
 
                     answer = "wrong answer";
@@ -85,7 +87,7 @@ public class Cars extends AppCompatActivity {
                     points = points + 20;
                     correct++;
                 }
-                else if (checkedId !=  R.id.id_des)
+                else if (checkedId !=  R.id.founder)
                 {
 
                     answer = "wrong answer";
@@ -106,7 +108,7 @@ public class Cars extends AppCompatActivity {
                     points = points + 20;
                     correct++;
                 }
-                else if (checkedId !=  R.id.id_xi)
+                else if (checkedId !=  R.id.most)
                 {
 
                     answer = "wrong answer";
@@ -122,7 +124,7 @@ public class Cars extends AppCompatActivity {
 
                 String answer = selected.getText().toString();
 
-                if (checkedId == R.id.built) {
+                if (checkedId == R.id.carPlant) {
                     answer = "Port Elizabeth";
                     points = points + 20;
                     correct++;
@@ -141,13 +143,27 @@ public class Cars extends AppCompatActivity {
         AlertDialog.Builder builder= new AlertDialog.Builder(this) ;
         builder.setIcon(R.drawable.quiz);
         builder.setTitle("QuizApp");
-        builder.setMessage("Points :"+points+"\nCorrect Answers: "+correct);
-        builder.setNegativeButton("OK",null);
+        builder.setMessage("Points :"+points+"\nCorrect Answers: "+correct+"\n\n The correct answers are"+"\n1.1973"
+        +"\n2.Bugatti Veyron Super Sport"+"\n3.Hans-Werner Aufrecht  and  Erhard Melcher"+"\n4.Koenigsegg CCXR Trevita"+"\n5.Port Elizabeth");
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+
+
+
+            }
+        });
         builder.show();
 
     }
 
-
+    public void onClick(View v)
+    {
+        Intent i;
+        i = new Intent(this,QuizApp.class);
+        startActivity(i);
+    }
 
 }
 

@@ -20,17 +20,13 @@
     tools:context="com.example.android.quizapp.politics">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+      style="@style/politics"
         android:text="QUESTIONS"
-        android:textColor="@android:color/black"
         android:textSize="25sp"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+     style="@style/politics"
         android:text="1.Who is the former COO of SABC?"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -40,31 +36,23 @@
 
         <RadioButton
             android:id="@+id/id_sabcCoo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mr Hlaudi Motsoening"
-            android:textColor="@android:color/black"
+            style="@style/politics"
+            android:text="Mr Hlaudi Motsoeneng"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Mr Ndlozi"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Ms Baleka Mbete"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Mr Solly Msimanga"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
@@ -72,10 +60,8 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+      style="@style/politics"
         android:text="2.Who is the new  Re-elected president of Gabon"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -84,42 +70,32 @@
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
           android:text="Mr Robert Mugabe"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
             android:id="@+id/id_gabon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/politics"
             android:text="Mr Ali Bongo Ondimba "
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text=" Mr Muhammadu Buhari"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Mr Goodluck Jonathan"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+     style="@style/politics"
         android:text="3.Who is the minister of Cooperate Governance and Traditonal Affairs(CoGTA)?"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
 
@@ -129,31 +105,27 @@
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Mr Nhlanhla Nene"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Ms Bahabile Dlamini"/>
+
         <RadioButton
             android:id="@+id/id_des"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Mr Des Van Royen"/>
+
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text="Mr Brian Molefe"/>
     </RadioGroup>
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+       style="@style/politics"
         android:text="4.Who is the president of Peoples's Replublic of China?"
-        android:textColor="@android:color/black"
         android:textSize="20sp" />
 
 
@@ -164,32 +136,26 @@
 
         <RadioButton
             android:id="@+id/china"
-            android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Zhang Xun"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Yuan Shikai"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Mr Jackie Chan"/>
 
         <RadioButton
             android:id="@+id/id_xi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text="Mr Xi Jinping"/>
     </RadioGroup>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+       style="@style/politics"
         android:text="5.Who is the chairperson of South African Airways(SAA)?"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
 
@@ -200,42 +166,42 @@
 
         <RadioButton
             android:id="@+id/id_myeni"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Ms Dudu Cynthis Myeni"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
+
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Ms Nomvula Mokonyane"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Ms Thoko Didiza"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
            android:text="Mr Melusi Gigaba"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/button"
         android:onClick="quizAnswer"
         android:text="submit"
-        android:textColor="@android:color/black"
         android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/back"
+      style="@style/button"
+        android:onClick="onClick"
+        android:text="BACK"
+        android:textSize="25sp"/>
+
+
 
 </LinearLayout>
 

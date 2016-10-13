@@ -1,5 +1,6 @@
 package com.example.android.quizapp;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,7 +14,7 @@ import android.widget.Toast;
 public class Politics extends AppCompatActivity {
 
     RadioGroup rdgroup1, rdgroup2, rdgroup3, rdgroup4, rdgroup5;
-    Button btnDisplay;
+    Button btnDisplay,bckbtn;
     RadioButton selected;
     String answer;
     int points, correct,wrong;
@@ -23,12 +24,14 @@ public class Politics extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_politics);
         btnDisplay = (Button) findViewById(R.id.submit);
+        bckbtn = (Button) findViewById(R.id.back);
         rdgroup1 = (RadioGroup) findViewById(R.id.sabc);
         rdgroup2 = (RadioGroup) findViewById(R.id.gabons);
         rdgroup3 = (RadioGroup) findViewById(R.id.cogta);
         rdgroup4 = (RadioGroup) findViewById(R.id.chinese);
         rdgroup5 = (RadioGroup) findViewById(R.id.saa);
         points = 0;
+
 
 
         rdgroup1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -39,7 +42,7 @@ public class Politics extends AppCompatActivity {
                 String answer = selected.getText().toString();
 
                 if (checkedId == R.id.id_sabcCoo) {
-                    answer = "Mr Hlaudi Motsoening";
+                    answer = "Mr Hlaudi Motsoeneng";
                     points = points + 20;
                     correct++;
                 }
@@ -141,13 +144,18 @@ public class Politics extends AppCompatActivity {
             AlertDialog.Builder builder= new AlertDialog.Builder(this) ;
             builder.setIcon(R.drawable.quiz);
             builder.setTitle("QuizApp");
-            builder.setMessage("Points :"+points+"\nCorrect Answers: "+correct);
-            builder.setNegativeButton("OK",null);
+            builder.setMessage("Points :"+points+"\nCorrect Answers: "+correct+"\n\n The correct answers are"+"\n1.Mr Hlaudi Motsoeneng"
+                    +"\n2.Mr Ali Bongo Ondimba"+"\n3.Mr Des Van Royen"+"\n4.Mr Xi Jinping"+"\n5.Ms Dudu Cynthis Myeni");
+            builder.setPositiveButton("OK",null);
             builder.show();
 
     }
 
-
-
+public void onClick(View v)
+        {
+        Intent i;
+        i = new Intent(this,QuizApp.class);
+        startActivity(i);
+        }
 
 }

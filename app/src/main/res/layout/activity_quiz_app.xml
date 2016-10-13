@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:background="#008B8B"
+    style="@style/lay"
+    android:background="@color/MidnightBlue"
     android:paddingBottom="0dp"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
@@ -12,67 +10,55 @@
     tools:context="com.example.android.quizapp.QuizApp">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        style="@style/lay"
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            style="@style/header"
             android:scaleType="centerCrop"
             android:src="@drawable/qquis" />
 
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-            android:layout_weight="1"
-        android:text="@string/tittle"
-        android:textAllCaps="true"
-        android:textColor="#FFFF00"
-        android:textSize="30sp"/>
+            style="@style/header"
+            android:background="@color/MidnightBlue"
+            android:text="@string/tittle"
+            android:textAllCaps="true"
+            android:textColor="#FFFF00"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            style="@style/doc"
             android:text="@string/topics"
             android:textAllCaps="true"
-            android:textColor="#FF6347"
-            android:textSize="20sp"/>
+            android:textColor="@color/Yellow"
+            android:textSize="20sp" />
 
 
         <RadioGroup
             android:id="@+id/radiogroup"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+            style="@style/header">
 
             <RadioButton
                 android:id="@+id/politics"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                style="@style/header"
+                android:backgroundTint="@color/MediumVioletRed"
                 android:text="@string/politics"
-                android:textColor="#FFFAFA"/>
+                android:textColor="@color/Yellow" />
 
             <RadioButton
                 android:id="@+id/cars"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                style="@style/header"
+                android:backgroundTint="@color/MediumVioletRed"
                 android:text="@string/cars"
-                android:textColor="#FFFAFA"/>
+                android:textColor="@color/Yellow" />
 
             <RadioButton
                 android:id="@+id/sport"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                style="@style/header"
+                android:backgroundTint="@color/MediumVioletRed"
                 android:text="@string/sport"
-                android:textColor="#FFFAFA"/>
+                android:textColor="@color/Yellow" />
 
         </RadioGroup>
 

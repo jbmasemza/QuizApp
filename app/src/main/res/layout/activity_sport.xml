@@ -250,6 +250,15 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"/>
 
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:text="BACK"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"/>
+
 </LinearLayout>
 
     </ScrollView>
