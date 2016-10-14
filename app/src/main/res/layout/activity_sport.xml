@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/BurlyWood"
     tools:context="com.example.android.quizapp.Sport">
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,18 +20,14 @@
     tools:context="com.example.android.quizapp.Sport">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+       style="@style/politics"
         android:text="Questions"
         android:textAllCaps="true"
-        android:textColor="@android:color/black"
         android:textSize="25sp"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+     style="@style/politics"
         android:text="1.Who is the current world record holder, world champion and olympic champion in men 400 meter?"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -40,39 +37,29 @@
 
         <RadioButton
             android:id="@+id/marathon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Mr Wyde Van Nieker"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text="Ms Caster Semenya"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Mr Usain Bolt"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+       style="@style/politics"
             android:text="Mr Oscar Pistorius"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+     style="@style/politics"
         android:text="2.Who is the world's highest paid soccer star? "
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -81,41 +68,31 @@
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Mr L Messi"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
             android:id="@+id/player"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/politics"
             android:text="Mr Christiano Ronaldo"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text="Mr D Drogba"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+      style="@style/politics"
             android:text="Mr David Berkham"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    style="@style/politics"
         android:text="3.Who is the current FIFA president?"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -124,41 +101,31 @@
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Mr Sepp Blatter"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Mr Tokyo Sexwale"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
             android:id="@+id/fifap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Mr Gianni Infantino"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Mr Danny Jordan"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+       style="@style/politics"
         android:text="4.Who is the current Manchester United coach? "
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -167,42 +134,32 @@
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/politics"
             android:text="Mr Paul Pogba"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Louis van Gaal"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/politics"
             android:text="Mr Ryan Giggs"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
             android:id="@+id/manchester"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Mr Jose Mourinho"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+   style="@style/politics"
         android:text="5.Who are the 2015/16 reigning ABSA premier's league champion?"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -212,51 +169,39 @@
 
         <RadioButton
             android:id="@+id/sundowns"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text="Mamelodi sundowns"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text="Kaizer Chiefs"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text="Oralndo Pirates"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Super Sport United"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
 
 
     </RadioGroup>
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+      style="@style/button"
         android:onClick="quizAnswer"
         android:text="submit"
-        android:textColor="@android:color/black"
         android:textSize="25sp"/>
 
     <Button
         android:id="@+id/back"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+     style="@style/button"
         android:onClick="onClick"
         android:text="BACK"
-        android:textColor="@android:color/black"
         android:textSize="25sp"/>
 
 </LinearLayout>

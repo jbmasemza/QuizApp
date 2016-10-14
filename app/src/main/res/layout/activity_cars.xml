@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/BurlyWood"
     tools:context="com.example.android.quizapp.Cars">
 
 
@@ -20,18 +21,14 @@
     tools:context="com.example.android.quizapp.Cars">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+      style="@style/politics"
         android:text="Questions"
         android:textAllCaps="true"
-        android:textColor="@android:color/black"
         android:textSize="25sp"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+      style="@style/politics"
         android:text="1.Which year did BMW attempt to built their first electric car?"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -41,40 +38,30 @@
 
         <RadioButton
             android:id="@+id/year"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text="1973"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="1985"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="1967"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text="2014"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+      style="@style/politics"
        android:text="2.What is the world's fastest car?"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -83,41 +70,31 @@
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Hennessy Venom GT"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
             android:id="@+id/fast"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Bugatti Veyron Super Sport"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="McLaren F1"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text=" Ferrari F40 "
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+      style="@style/politics"
         android:text="3.Who are the founders of AMG?"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -126,41 +103,31 @@
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Bill Gates and   Larry Page "
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text="Bayerische Motoren Werke and Warren Buffet"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
             android:id="@+id/founder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        style="@style/politics"
             android:text="Hans-Werner Aufrecht  and  Erhard Melcher"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Enzo Anselmo Ferrari and Kiichiro Toyoda"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+     style="@style/politics"
         android:text="4.What is the world's most expensive car?"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -176,35 +143,27 @@
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+         style="@style/politics"
             android:text="Lykan HyperSport "
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Bugatti Veyron Grand Sport Vitesse"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
             android:id="@+id/most"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        style="@style/politics"
             android:text="Koenigsegg CCXR Trevita"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+     style="@style/politics"
         android:text="5.Where in South Africa will the new Chinese car factory be built?"
-        android:textColor="@android:color/black"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -214,50 +173,38 @@
 
         <RadioButton
             android:id="@+id/carPlant"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Port Elizabeth"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Pretoria"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+          style="@style/politics"
             android:text="Durban"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+           style="@style/politics"
             android:text="Cape Town"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
 
     </RadioGroup>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+      style="@style/button"
         android:onClick="quizAnswer"
         android:text="submit"
-        android:textColor="@android:color/black"
         android:textSize="25sp"/>
 
     <Button
         android:id="@+id/back"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+       style="@style/button"
         android:onClick="onClick"
         android:text="BACK"
-        android:textColor="@android:color/black"
         android:textSize="25sp"/>
 
 </LinearLayout>
