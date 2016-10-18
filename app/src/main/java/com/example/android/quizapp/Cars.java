@@ -16,7 +16,7 @@ public class Cars extends AppCompatActivity {
     Button btnDisplay;
     RadioButton selected;
     String answer;
-    int points, correct,wrong;
+    int points, correct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -151,6 +151,11 @@ public class Cars extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which)
             {
+                rdgroup1.clearCheck();
+                rdgroup2.clearCheck();
+                rdgroup3.clearCheck();
+                rdgroup4.clearCheck();
+                rdgroup5.clearCheck();
 
 
 
@@ -162,11 +167,7 @@ public class Cars extends AppCompatActivity {
 
     public void onClick(View v)
     {
-        rdgroup1.clearCheck();
-        rdgroup2.clearCheck();
-        rdgroup3.clearCheck();
-        rdgroup4.clearCheck();
-        rdgroup5.clearCheck();
+
 
         Intent i;
         i = new Intent(this,QuizApp.class);
