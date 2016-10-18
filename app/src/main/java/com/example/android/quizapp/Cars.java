@@ -140,6 +140,8 @@ public class Cars extends AppCompatActivity {
 
     public void quizAnswer(View view){
 
+
+
         AlertDialog.Builder builder= new AlertDialog.Builder(this) ;
         builder.setIcon(R.drawable.quiz);
         builder.setTitle("QuizApp");
@@ -160,6 +162,12 @@ public class Cars extends AppCompatActivity {
 
     public void onClick(View v)
     {
+        rdgroup1.clearCheck();
+        rdgroup2.clearCheck();
+        rdgroup3.clearCheck();
+        rdgroup4.clearCheck();
+        rdgroup5.clearCheck();
+
         Intent i;
         i = new Intent(this,QuizApp.class);
         startActivity(i);

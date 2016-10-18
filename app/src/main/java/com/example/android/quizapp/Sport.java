@@ -150,6 +150,11 @@ public class Sport extends AppCompatActivity {
 
     public void onClick(View v)
     {
+        rdgroup1.clearCheck();
+        rdgroup2.clearCheck();
+        rdgroup3.clearCheck();
+        rdgroup4.clearCheck();
+        rdgroup5.clearCheck();
         Intent i;
         i = new Intent(this,QuizApp.class);
         startActivity(i);

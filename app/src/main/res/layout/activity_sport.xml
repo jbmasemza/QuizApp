@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/BurlyWood"
     tools:context="com.example.android.quizapp.Sport">
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,7 +16,18 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
     tools:context="com.example.android.quizapp.Sport">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@style/button"
+        android:layout_width="95dp"
+        android:layout_height="42dp"
+        android:layout_gravity="right"
+        android:onClick="onClick"
+        android:src="@drawable/homes"
+        android:text="home" />
 
     <TextView
        style="@style/politics"
@@ -191,18 +201,14 @@
 
 
     </RadioGroup>
-    <Button
-      style="@style/button"
-        android:onClick="quizAnswer"
-        android:text="submit"
-        android:textSize="25sp"/>
 
     <Button
-        android:id="@+id/back"
-     style="@style/button"
-        android:onClick="onClick"
-        android:text="BACK"
-        android:textSize="25sp"/>
+     android:id="@id/submit"
+       style="@style/button"
+       android:onClick="quizAnswer"
+       android:text="submit"
+        android:textSize="25sp" />
+
 
 </LinearLayout>
 

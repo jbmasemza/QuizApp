@@ -6,7 +6,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/BurlyWood"
     tools:context="com.example.android.quizapp.Politics">
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,6 +18,16 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.quizapp.politics">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@style/button"
+        android:layout_width="95dp"
+        android:layout_height="42dp"
+        android:layout_gravity="right"
+        android:onClick="onClick"
+        android:src="@drawable/homes"
+        android:text="home" />
 
     <TextView
       style="@style/politics"
@@ -193,14 +202,7 @@
         style="@style/button"
         android:onClick="quizAnswer"
         android:text="submit"
-        android:textSize="25sp"/>
-
-    <Button
-        android:id="@+id/back"
-      style="@style/button"
-        android:onClick="onClick"
-        android:text="BACK"
-        android:textSize="25sp"/>
+        android:textSize="25sp" />
 
 
 
