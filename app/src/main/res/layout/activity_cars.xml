@@ -1,215 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.quizapp.Cars">
 
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.quizapp.Cars">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.quizapp.Cars">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        style="@style/button"
-        android:layout_width="95dp"
-        android:layout_height="42dp"
-        android:layout_gravity="right"
-        android:onClick="onClick"
-        android:src="@drawable/homes"
-        android:text="home" />
+        <TextView
+            style="@style/politics"
+            android:text="@string/question"
+            android:textAllCaps="true"
+            android:textSize="25sp" />
 
-    <TextView
-      style="@style/politics"
-        android:text="Questions"
-        android:textAllCaps="true"
-        android:textSize="25sp"/>
+        <TextView
+            style="@style/politics"
+            android:text="@string/bmw"
+            android:textSize="20sp" />
 
-    <TextView
-      style="@style/politics"
-        android:text="1.Which year did BMW attempt to built their first electric car?"
-        android:textSize="20sp"/>
-
-    <RadioGroup
-        android:id="@+id/electric"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/year"
-         style="@style/politics"
-            android:text="1973"
-            android:textSize="15sp"/>
-
-        <RadioButton
-          style="@style/politics"
-            android:text="1985"
-            android:textSize="15sp"/>
-
-        <RadioButton
-          style="@style/politics"
-            android:text="1967"
-            android:textSize="15sp"/>
-
-        <RadioButton
-         style="@style/politics"
-            android:text="2014"
-            android:textSize="15sp"/>
-
-    </RadioGroup>
-
-    <TextView
-      style="@style/politics"
-       android:text="2.What is the world's fastest car?"
-        android:textSize="20sp"/>
-
-    <RadioGroup
-        android:id="@+id/cars"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-          style="@style/politics"
-            android:text="Hennessy Venom GT"
-            android:textSize="15sp"/>
-
-        <RadioButton
-            android:id="@+id/fast"
-           style="@style/politics"
-            android:text="Bugatti Veyron Super Sport"
-            android:textSize="15sp"/>
-
-        <RadioButton
-          style="@style/politics"
-            android:text="McLaren F1"
-            android:textSize="15sp"/>
-
-        <RadioButton
-         style="@style/politics"
-            android:text=" Ferrari F40 "
-            android:textSize="15sp"/>
-
-    </RadioGroup>
-
-    <TextView
-      style="@style/politics"
-        android:text="3.Who are the founders of AMG?"
-        android:textSize="20sp"/>
-
-    <RadioGroup
-        android:id="@+id/amg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-          style="@style/politics"
-            android:text="Bill Gates and   Larry Page "
-            android:textSize="15sp"/>
-
-        <RadioButton
-         style="@style/politics"
-            android:text="Bayerische Motoren Werke and Warren Buffet"
-            android:textSize="15sp"/>
-
-        <RadioButton
-            android:id="@+id/founder"
-        style="@style/politics"
-            android:text="Hans-Werner Aufrecht  and  Erhard Melcher"
-            android:textSize="15sp"/>
-
-        <RadioButton
-          style="@style/politics"
-            android:text="Enzo Anselmo Ferrari and Kiichiro Toyoda"
-            android:textSize="15sp"/>
-
-    </RadioGroup>
-
-    <TextView
-     style="@style/politics"
-        android:text="4.What is the world's most expensive car?"
-        android:textSize="20sp"/>
-
-    <RadioGroup
-        android:id="@+id/expensive"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
+        <RadioGroup
+            android:id="@+id/electric"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lamborghini Veneno Roadster "
-            android:textColor="@android:color/black"
-            android:textSize="15sp"/>
+            android:layout_height="wrap_content">
 
-        <RadioButton
-         style="@style/politics"
-            android:text="Lykan HyperSport "
-            android:textSize="15sp"/>
+            <RadioButton
+                android:id="@+id/year"
+                style="@style/politics"
+                android:text="@string/year"
+                android:textSize="15sp" />
 
-        <RadioButton
-           style="@style/politics"
-            android:text="Bugatti Veyron Grand Sport Vitesse"
-            android:textSize="15sp"/>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/years"
+                android:textSize="15sp" />
 
-        <RadioButton
-            android:id="@+id/most"
-        style="@style/politics"
-            android:text="Koenigsegg CCXR Trevita"
-            android:textSize="15sp"/>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/year1"
+                android:textSize="15sp" />
 
-    </RadioGroup>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/year2"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/politics"
+            android:text="@string/fast"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/cars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/venom"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/fast"
+                style="@style/politics"
+                android:text="@string/bugatti"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/f1"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/f40"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/politics"
+            android:text="@string/amg"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/amg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/larry"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/warren"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/founder"
+                style="@style/politics"
+                android:text="@string/hans"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/toyoda"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/politics"
+            android:text="@string/expensive"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/expensive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/veneno"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/lykan"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/grand"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/most"
+                style="@style/politics"
+                android:text="@string/ccxr"
+                android:textSize="15sp" />
+
+        </RadioGroup>
 
 
-    <TextView
-     style="@style/politics"
-        android:text="5.Where in South Africa will the new Chinese car factory be built?"
-        android:textSize="20sp"/>
+        <TextView
+            style="@style/politics"
+            android:text="@string/factory"
+            android:textSize="20sp" />
 
-    <RadioGroup
-        android:id="@+id/built"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/built"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/carPlant"
-           style="@style/politics"
-            android:text="Port Elizabeth"
-            android:textSize="15sp"/>
+            <RadioButton
+                android:id="@+id/carPlant"
+                style="@style/politics"
+                android:text="@string/port"
+                android:textSize="15sp" />
 
-        <RadioButton
-           style="@style/politics"
-            android:text="Pretoria"
-            android:textSize="15sp"/>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/pta"
+                android:textSize="15sp" />
 
-        <RadioButton
-          style="@style/politics"
-            android:text="Durban"
-            android:textSize="15sp"/>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/durbs"
+                android:textSize="15sp" />
 
-        <RadioButton
-           style="@style/politics"
-            android:text="Cape Town"
-            android:textSize="15sp"/>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/cape"
+                android:textSize="15sp" />
 
-    </RadioGroup>
+        </RadioGroup>
 
-    <Button
-      style="@style/button"
-        android:colorButtonNormal="@color/DarkGray"
-        android:onClick="quizAnswer"
-        android:text="submit"
-        android:textSize="25sp"/>
+        <Button
+            style="@style/button"
+            android:onClick="quizAnswer"
+            android:text="@string/submit" />
 
-</LinearLayout>
+    </LinearLayout>
 
 </ScrollView>

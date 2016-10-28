@@ -1,218 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.quizapp.Sport">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        tools:context="com.example.android.quizapp.Sport">
+
+        <TextView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:weightSum="1"
-    tools:context="com.example.android.quizapp.Sport">
+            android:layout_height="match_parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        style="@style/button"
-        android:layout_width="95dp"
-        android:layout_height="42dp"
-        android:layout_gravity="right"
-        android:onClick="onClick"
-        android:src="@drawable/homes"
-        android:text="home" />
-
-    <TextView
-       style="@style/politics"
-        android:text="Questions"
-        android:textAllCaps="true"
-        android:textSize="25sp"/>
-
-    <TextView
-     style="@style/politics"
-        android:text="1.Who is the current world record holder, world champion and olympic champion in men 400 meter?"
-        android:textSize="20sp"/>
-
-    <RadioGroup
-        android:id="@+id/record"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/marathon"
-           style="@style/politics"
-            android:text="Mr Wyde Van Nieker"
-            android:textSize="15sp"/>
-
-        <RadioButton
-         style="@style/politics"
-            android:text="Ms Caster Semenya"
-            android:textSize="15sp"/>
-
-        <RadioButton
-           style="@style/politics"
-            android:text="Mr Usain Bolt"
-            android:textSize="15sp"/>
-
-        <RadioButton
-       style="@style/politics"
-            android:text="Mr Oscar Pistorius"
-            android:textSize="15sp"/>
-
-    </RadioGroup>
-    <TextView
-     style="@style/politics"
-        android:text="2.Who is the world's highest paid soccer star? "
-        android:textSize="20sp"/>
-
-    <RadioGroup
-        android:id="@+id/soccer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-          style="@style/politics"
-            android:text="Mr L Messi"
-            android:textSize="15sp"/>
-
-        <RadioButton
-            android:id="@+id/player"
+        <TextView
             style="@style/politics"
-            android:text="Mr Christiano Ronaldo"
-            android:textSize="15sp"/>
+            android:text="@string/question"
+            android:textAllCaps="true"
+            android:textSize="25sp" />
 
-        <RadioButton
-         style="@style/politics"
-            android:text="Mr D Drogba"
-            android:textSize="15sp"/>
-
-        <RadioButton
-      style="@style/politics"
-            android:text="Mr David Berkham"
-            android:textSize="15sp"/>
-
-    </RadioGroup>
-
-    <TextView
-    style="@style/politics"
-        android:text="3.Who is the current FIFA president?"
-        android:textSize="20sp"/>
-
-    <RadioGroup
-        android:id="@+id/fifa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-          style="@style/politics"
-            android:text="Mr Sepp Blatter"
-            android:textSize="15sp"/>
-
-        <RadioButton
-          style="@style/politics"
-            android:text="Mr Tokyo Sexwale"
-            android:textSize="15sp"/>
-
-        <RadioButton
-            android:id="@+id/fifap"
-          style="@style/politics"
-            android:text="Mr Gianni Infantino"
-            android:textSize="15sp"/>
-
-        <RadioButton
-           style="@style/politics"
-            android:text="Mr Danny Jordan"
-            android:textSize="15sp"/>
-
-    </RadioGroup>
-
-    <TextView
-       style="@style/politics"
-        android:text="4.Who is the current Manchester United coach? "
-        android:textSize="20sp"/>
-
-    <RadioGroup
-        android:id="@+id/coach"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
+        <TextView
             style="@style/politics"
-            android:text="Mr Paul Pogba"
-            android:textSize="15sp"/>
+            android:text="@string/meter"
+            android:textSize="20sp" />
 
-        <RadioButton
-          style="@style/politics"
-            android:text="Louis van Gaal"
-            android:textSize="15sp"/>
+        <RadioGroup
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <RadioButton
+            <RadioButton
+                android:id="@+id/marathon"
+                style="@style/politics"
+                android:text="@string/van"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/caster"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/bolt"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/oscar"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <TextView
             style="@style/politics"
-            android:text="Mr Ryan Giggs"
-            android:textSize="15sp"/>
+            android:text="@string/paid"
+            android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/manchester"
-           style="@style/politics"
-            android:text="Mr Jose Mourinho"
-            android:textSize="15sp"/>
+        <RadioGroup
+            android:id="@+id/soccer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    </RadioGroup>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/messi"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/player"
+                style="@style/politics"
+                android:text="@string/ronald"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/drogba"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/david"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/politics"
+            android:text="@string/fifa"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/fifa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/blatter"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/tokyo"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/fifap"
+                style="@style/politics"
+                android:text="@string/gianni"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/jordan"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/politics"
+            android:text="@string/coach"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/coach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/paul"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/louis"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/ryan"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/manchester"
+                style="@style/politics"
+                android:text="@string/jose"
+                android:textSize="15sp" />
+
+        </RadioGroup>
 
 
-    <TextView
-   style="@style/politics"
-        android:text="5.Who are the 2015/16 reigning ABSA premier's league champion?"
-        android:textSize="20sp"/>
+        <TextView
+            style="@style/politics"
+            android:text="@string/caf"
+            android:textSize="20sp" />
 
-    <RadioGroup
-        android:id="@+id/champion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/champion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/sundowns"
-         style="@style/politics"
-            android:text="Mamelodi sundowns"
-            android:textSize="15sp"/>
+            <RadioButton
+                android:id="@+id/sundowns"
+                style="@style/politics"
+                android:text="@string/sundowns"
+                android:textSize="15sp" />
 
-        <RadioButton
-         style="@style/politics"
-            android:text="Kaizer Chiefs"
-            android:textSize="15sp"/>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/chiefs"
+                android:textSize="15sp" />
 
-        <RadioButton
-         style="@style/politics"
-            android:text="Oralndo Pirates"
-            android:textSize="15sp"/>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/pirates"
+                android:textSize="15sp" />
 
-        <RadioButton
-           style="@style/politics"
-            android:text="Super Sport United"
-            android:textSize="15sp"/>
-
-
-
-    </RadioGroup>
-
-    <Button
-     android:id="@id/submit"
-       style="@style/button"
-       android:onClick="quizAnswer"
-       android:text="submit"
-        android:textSize="25sp" />
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/ssunited"
+                android:textSize="15sp" />
 
 
-</LinearLayout>
+        </RadioGroup>
 
-    </ScrollView>
+        <Button
+            android:id="@id/submit"
+            style="@style/button"
+            android:onClick="quizAnswer"
+            android:text="@string/submit" />
+
+
+    </LinearLayout>
+
+</ScrollView>
 
 
 

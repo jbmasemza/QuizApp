@@ -15,9 +15,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Politics" />
-        <activity android:name=".Cars" />
-        <activity android:name=".Sport"></activity>
+        <activity
+            android:name=".Politics"
+            android:label="POLITICS"
+            android:parentActivityName=".QuizApp"></activity>/>
+        <activity
+            android:name=".Cars"
+            android:label="CARS"
+            android:parentActivityName=".QuizApp"></activity>/>
+        <activity
+            android:name=".Sport"
+            android:label="SPORT"
+            android:parentActivityName=".QuizApp"></activity>
     </application>
 
 </manifest>

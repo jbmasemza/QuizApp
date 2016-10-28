@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/lay"
-    android:background="@color/MidnightBlue"
+    android:background="@color/White"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
@@ -10,7 +10,7 @@
     tools:context="com.example.android.quizapp.QuizApp">
 
     <LinearLayout
-        style="@style/lay"
+    style="@style/lay"
         android:orientation="vertical">
 
         <ImageView
@@ -20,10 +20,10 @@
 
         <TextView
             style="@style/header"
-            android:background="@color/MidnightBlue"
+            android:background="@color/White"
             android:text="@string/tittle"
             android:textAllCaps="true"
-            android:textColor="#FFFF00"
+            android:textColor="@color/Black"
             android:textSize="30sp" />
 
         <TextView
@@ -31,7 +31,7 @@
             style="@style/doc"
             android:text="@string/topics"
             android:textAllCaps="true"
-            android:textColor="@color/Yellow"
+            android:textColor="@color/Black"
             android:textSize="20sp" />
 
 
@@ -42,23 +42,23 @@
             <RadioButton
                 android:id="@+id/politics"
                 style="@style/header"
-                android:backgroundTint="@color/MediumVioletRed"
+                android:backgroundTint="@color/White"
                 android:text="@string/politics"
-                android:textColor="@color/Yellow" />
+                android:textColor="@color/Black" />
 
             <RadioButton
                 android:id="@+id/cars"
                 style="@style/header"
-                android:backgroundTint="@color/MediumVioletRed"
+                android:backgroundTint="@color/White"
                 android:text="@string/cars"
-                android:textColor="@color/Yellow" />
+                android:textColor="@color/Black" />
 
             <RadioButton
                 android:id="@+id/sport"
                 style="@style/header"
-                android:backgroundTint="@color/MediumVioletRed"
+                android:backgroundTint="@color/White"
                 android:text="@string/sport"
-                android:textColor="@color/Yellow" />
+                android:textColor="@color/Black" />
 
         </RadioGroup>
 

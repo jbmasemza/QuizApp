@@ -17,6 +17,9 @@ public class Cars extends AppCompatActivity {
     RadioButton selected;
     String answer;
     int points, correct;
+    int correct1, correct2, correct3, correct4, correct5;
+    int incorrect1, incorrect2, incorrect3, incorrect4, incorrect5;
+    int answer1, answer2, answer3, answer4, answer5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,12 @@ public class Cars extends AppCompatActivity {
         rdgroup5 = (RadioGroup) findViewById(R.id.built);
         points = 0;
 
+        rdgroup1.clearCheck();
+        rdgroup2.clearCheck();
+        rdgroup3.clearCheck();
+        rdgroup4.clearCheck();
+        rdgroup5.clearCheck();
+
 
         rdgroup1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -42,14 +51,13 @@ public class Cars extends AppCompatActivity {
 
                 if (checkedId == R.id.year) {
                     answer = "1973";
-                    points = points + 20;
-                    correct++;
-                }
-                else if (checkedId !=  R.id.year)
-                {
+                    answer1 = 20;
+                    correct1 = 1;
 
+                } else {
+                    answer1 = 0;
+                    incorrect1 = 0;
                     answer = "wrong answer";
-                    points = points + 0;
                 }
             }
         });
@@ -63,14 +71,13 @@ public class Cars extends AppCompatActivity {
 
                 if (checkedId == R.id.fast) {
                     answer = "Bugatti Veyron Super Sport ";
-                    points = points + 20;
-                    correct++;
-                }
-                else if (checkedId !=  R.id.fast)
-                {
+                    answer1 = 20;
+                    correct1 = 1;
 
+                } else {
+                    answer1 = 0;
+                    incorrect1 = 0;
                     answer = "wrong answer";
-                    points = points + 0;
                 }
             }
         });
@@ -84,14 +91,13 @@ public class Cars extends AppCompatActivity {
 
                 if (checkedId == R.id.founder) {
                     answer = "Hans-Werner Aufrecht  and  Erhard Melcher";
-                    points = points + 20;
-                    correct++;
-                }
-                else if (checkedId !=  R.id.founder)
-                {
+                    answer1 = 20;
+                    correct1 = 1;
 
+                } else {
+                    answer1 = 0;
+                    incorrect1 = 0;
                     answer = "wrong answer";
-                    points = points + 0;
                 }
             }
         });
@@ -105,14 +111,13 @@ public class Cars extends AppCompatActivity {
 
                 if (checkedId == R.id.most) {
                     answer = " Koenigsegg CCXR Trevita";
-                    points = points + 20;
-                    correct++;
-                }
-                else if (checkedId !=  R.id.most)
-                {
+                    answer1 = 20;
+                    correct1 = 1;
 
+                } else {
+                    answer1 = 0;
+                    incorrect1 = 0;
                     answer = "wrong answer";
-                    points = points + 0;
                 }
             }
         });
@@ -127,51 +132,52 @@ public class Cars extends AppCompatActivity {
                 if (checkedId == R.id.carPlant) {
                     answer = "Port Elizabeth";
                     points = points + 20;
-                    correct++;
-                }
-                else if (checkedId !=  R.id.carPlant)
-                {
+                    answer1 = 20;
+                    correct1 = 1;
 
+                } else {
+                    answer1 = 0;
+                    incorrect1 = 0;
                     answer = "wrong answer";
-                    points = points + 0;
                 }
             }
-        });}
+        });
+    }
 
-    public void quizAnswer(View view){
+    public void quizAnswer(View view) {
 
-
-
-        AlertDialog.Builder builder= new AlertDialog.Builder(this) ;
+        points = answer1 + answer2 + answer3 + answer4 + answer5;
+        correct = correct1 + correct2 + correct3 + correct4 + correct5;
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setIcon(R.drawable.quiz);
         builder.setTitle("QuizApp");
-        builder.setMessage("Points :"+points+"\nCorrect Answers: "+correct+"\n\n The correct answers are"+"\n1.1973"
-        +"\n2.Bugatti Veyron Super Sport"+"\n3.Hans-Werner Aufrecht  and  Erhard Melcher"+"\n4.Koenigsegg CCXR Trevita"+"\n5.Port Elizabeth");
+        builder.setMessage("Points :" + points + "\nCorrect Answers: " + correct + "\n\n The correct answers are" + "\n1.1973"
+                + "\n2.Bugatti Veyron Super Sport" + "\n3.Hans-Werner Aufrecht  and  Erhard Melcher" + "\n4.Koenigsegg CCXR Trevita" + "\n5.Port Elizabeth");
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialog, int which)
-            {
-                rdgroup1.clearCheck();
-                rdgroup2.clearCheck();
-                rdgroup3.clearCheck();
-                rdgroup4.clearCheck();
-                rdgroup5.clearCheck();
-
-
-
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(getApplicationContext(), Cars.class);
+                startActivity(intent);
             }
         });
         builder.show();
 
     }
 
-    public void onClick(View v)
-    {
+    public void onClick(View v) {
 
 
         Intent i;
-        i = new Intent(this,QuizApp.class);
+        i = new Intent(this, QuizApp.class);
         startActivity(i);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(getApplicationContext(), QuizApp.class);
+        startActivity(intent);
+
     }
 
 }

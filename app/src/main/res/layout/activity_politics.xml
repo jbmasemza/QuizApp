@@ -1,211 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.quizapp.Politics">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.quizapp.politics">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.quizapp.politics">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        style="@style/button"
-        android:layout_width="95dp"
-        android:layout_height="42dp"
-        android:layout_gravity="right"
-        android:onClick="onClick"
-        android:src="@drawable/homes"
-        android:text="home" />
 
-    <TextView
-      style="@style/politics"
-        android:text="QUESTIONS"
-        android:textSize="25sp"/>
-
-    <TextView
-     style="@style/politics"
-        android:text="1.Who is the former COO of SABC?"
-        android:textSize="20sp"/>
-
-    <RadioGroup
-        android:id="@+id/sabc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/id_sabcCoo"
+        <TextView
             style="@style/politics"
-            android:text="Mr Hlaudi Motsoeneng"
-            android:textSize="15sp"/>
+            android:text="@string/question"
+            android:textSize="25sp" />
 
-        <RadioButton
-           style="@style/politics"
-            android:text="Mr Ndlozi"
-            android:textSize="15sp"/>
-
-        <RadioButton
-           style="@style/politics"
-            android:text="Ms Baleka Mbete"
-            android:textSize="15sp"/>
-
-        <RadioButton
-           style="@style/politics"
-            android:text="Mr Solly Msimanga"
-            android:textSize="15sp"/>
-
-    </RadioGroup>
-
-
-
-    <TextView
-      style="@style/politics"
-        android:text="2.Who is the new  Re-elected president of Gabon"
-        android:textSize="20sp"/>
-
-    <RadioGroup
-        android:id="@+id/gabons"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-          style="@style/politics"
-          android:text="Mr Robert Mugabe"
-            android:textSize="15sp"/>
-
-        <RadioButton
-            android:id="@+id/id_gabon"
+        <TextView
             style="@style/politics"
-            android:text="Mr Ali Bongo Ondimba "
-            android:textSize="15sp"/>
+            android:text="@string/coop"
+            android:textSize="20sp" />
 
-        <RadioButton
-         style="@style/politics"
-            android:text=" Mr Muhammadu Buhari"
-            android:textSize="15sp"/>
+        <RadioGroup
+            android:id="@+id/sabc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <RadioButton
-           style="@style/politics"
-            android:text="Mr Goodluck Jonathan"
-            android:textSize="15sp"/>
+            <RadioButton
+                android:id="@+id/id_sabcCoo"
+                style="@style/politics"
+                android:text="@string/coo"
+                android:textSize="15sp" />
 
-    </RadioGroup>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/eff"
+                android:textSize="15sp" />
 
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/parli"
+                android:textSize="15sp" />
 
-    <TextView
-     style="@style/politics"
-        android:text="3.Who is the minister of Cooperate Governance and Traditonal Affairs(CoGTA)?"
-        android:textSize="20sp"/>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/da"
+                android:textSize="15sp" />
 
-
-    <RadioGroup
-        android:id="@+id/cogta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-          style="@style/politics"
-            android:text="Mr Nhlanhla Nene"/>
-
-        <RadioButton
-          style="@style/politics"
-            android:text="Ms Bahabile Dlamini"/>
-
-        <RadioButton
-            android:id="@+id/id_des"
-          style="@style/politics"
-            android:text="Mr Des Van Royen"/>
-
-        <RadioButton
-         style="@style/politics"
-            android:text="Mr Brian Molefe"/>
-    </RadioGroup>
+        </RadioGroup>
 
 
-    <TextView
-       style="@style/politics"
-        android:text="4.Who is the president of Peoples's Replublic of China?"
-        android:textSize="20sp" />
+        <TextView
+            style="@style/politics"
+            android:text="@string/gabon"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/gabons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/zim"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/id_gabon"
+                style="@style/politics"
+                android:text="@string/elected"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/buharu"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/googluck"
+                android:textSize="15sp" />
+
+        </RadioGroup>
 
 
-    <RadioGroup
-        android:id="@+id/chinese"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/china"
-          style="@style/politics"
-            android:text="Zhang Xun"/>
-
-        <RadioButton
-          style="@style/politics"
-            android:text="Yuan Shikai"/>
-
-        <RadioButton
-          style="@style/politics"
-            android:text="Mr Jackie Chan"/>
-
-        <RadioButton
-            android:id="@+id/id_xi"
-         style="@style/politics"
-            android:text="Mr Xi Jinping"/>
-    </RadioGroup>
-
-    <TextView
-       style="@style/politics"
-        android:text="5.Who is the chairperson of South African Airways(SAA)?"
-        android:textSize="20sp"/>
+        <TextView
+            style="@style/politics"
+            android:text="@string/Cogta"
+            android:textSize="20sp" />
 
 
-    <RadioGroup
-        android:id="@+id/saa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/cogta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/id_myeni"
-          style="@style/politics"
-            android:text="Ms Dudu Cynthis Myeni"
-            android:textSize="15sp"/>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/nene" />
 
-        <RadioButton
-          style="@style/politics"
-            android:text="Ms Nomvula Mokonyane"
-            android:textSize="15sp"/>
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/bathabile" />
 
-        <RadioButton
-           style="@style/politics"
-            android:text="Ms Thoko Didiza"
-            android:textSize="15sp"/>
+            <RadioButton
+                android:id="@+id/id_des"
+                style="@style/politics"
+                android:text="@string/cogta" />
 
-        <RadioButton
-          style="@style/politics"
-           android:text="Mr Melusi Gigaba"
-            android:textSize="15sp"/>
-
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/submit"
-        style="@style/button"
-        android:onClick="quizAnswer"
-        android:text="submit"
-        android:textSize="25sp" />
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/brian" />
+        </RadioGroup>
 
 
+        <TextView
+            style="@style/politics"
+            android:text="@string/china"
+            android:textSize="20sp" />
 
-</LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/china"
+                style="@style/politics"
+                android:text="@string/xun" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/yuan" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/chan" />
+
+            <RadioButton
+                android:id="@+id/id_xi"
+                style="@style/politics"
+                android:text="@string/president" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/politics"
+            android:text="@string/SAA"
+            android:textSize="20sp" />
+
+
+        <RadioGroup
+            android:id="@+id/saa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/id_myeni"
+                style="@style/politics"
+                android:text="@string/saa"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/noma"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/thoko"
+                android:textSize="15sp" />
+
+            <RadioButton
+                style="@style/politics"
+                android:text="@string/gigabyte"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/button"
+            android:onClick="quizAnswer"
+            android:text="@string/submit" />
+
+
+    </LinearLayout>
 
 </ScrollView>
